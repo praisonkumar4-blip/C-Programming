@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    char ch[50];
+    char s[50];
+    char sen[50];
+    
+    // Removed the '&' symbols
+    scanf("%s", ch);
+    scanf("\n%s", s);
+    
+    // FIXED: Changed "%s[^\n]%*c" to "%[^\n]%*c" and removed '&'
+    scanf("\n%[^\n]%*c", sen); 
+    
+    printf("%s\n", ch);
+    printf("%s\n", s);
+    printf("%s\n", sen);
+    
+    return 0;
+}
