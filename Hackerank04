@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int a, b, c, d;
+    
+    scanf("%d", &a);
+    scanf("%d", &b);
+    scanf("%d", &c);
+    scanf("%d", &d);
+    
+    // Check if 'a' is the largest
+    if (a >= b && a >= c && a >= d) {
+        printf("%d\n", a);
+    }
+    // Check if 'b' is the largest
+    else if (b >= a && b >= c && b >= d) {
+        printf("%d\n", b);
+    }
+    // Check if 'c' is the largest
+    else if (c >= a && c >= b && c >= d) {
+        printf("%d\n", c);
+    }
+    // If none of the above, 'd' must be the largest
+    else {
+        printf("%d\n", d);
+    }
+    
+    return 0;
+}
