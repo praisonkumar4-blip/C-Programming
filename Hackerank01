@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    
+    // Read the input integer
+    if (scanf("%d", &n) != 1) return 1;
+
+    // Array of string representations from 0 to 9 
+    // Index matches the number (e.g., words[1] is "one")
+    char *words[] = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+
+    // Conditional logic to check boundaries
+    if (n >= 1 && n <= 9) {
+        printf("%s\n", words[n]);
+    } else if (n > 9) {
+        printf("Greater than 9\n");
+    }
+
+    return 0;
+}
